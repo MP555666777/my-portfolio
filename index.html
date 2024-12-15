@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matea Peršić portfolio</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"> Matea Peršić</div>
+      <div>
+        <ul class="nav-linkovi">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Matea Peršić</div>
+      <div class="hamburger-meni">
+        <div class="hamburger-ikona" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-linkovi">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/slika.png" alt="Matea Peršić">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, my name is</p>
+        <h1 class="title">Matea Peršić</h1>
+        <p class="section__text__p2">univ. bacc. inf.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ZIVOTOPIS_Matea_Persic.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/logo_linkedin.png"
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/matea-per%C5%A1i%C4%87-b177a8341/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Learn more</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/matea_profile.png" alt="Matea" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/about_me.png"
+                alt="About me icon"
+                class="icon"
+              />
+              <h3>
+                Communicative <br />
+                Hardworking <br />
+                Quick learner
+              </h3>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>
+                Faculty of Informatics <br />
+                and Digital Technologies, <br />
+                University of Rijeka <br /><br />
+              </h3>
+              <a href="assets/Peršić_Matea_zavrsni_rad.pdf" target="_blank">
+                <h5>
+                  Final thesis - Investments in sport <br />
+                  and correlation with success: <br />
+                  Analysis and visualization <br />
+                  of sports data
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I’m Matea—a creative enthusiast with a passion for
+               designing and building in the digital world. My interests lie at the intersection of web development,
+               web design, and photography, where I get to merge artistry with technology.
+               With experience in Python and a solid foundation in databases, I have the technical
+               expertise to craft functional and dynamic projects. I also love transforming ideas
+               into visually captivating and user-friendly designs that bring concepts to life.
+               Through my work, I aim to create seamless digital experiences that leave a lasting 
+               impression. Explore my portfolio to discover more about my skills, creativity, and the projects I’ve brought to life!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Get to know</p>
+      <h1 class="title">My skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/figma.png" alt="Figma logo" class="icon" />
+                <div>
+                  <h3>UI/UX Desing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/blender.png"
+                  alt="Blender logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/wordpress.png"
+                  alt="Wordpress logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wordpress</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/photoshop.png"
+                  alt="Photoshop logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases/Marketing</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/sql.png" alt="SQL logo" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/visio.png" alt="Visio logo" class="icon" />
+                <div>
+                  <h3>Visio</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/oracle.png" alt="Oracle logo" class="icon" />
+                <div>
+                  <h3>ORACLE</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/python.png" alt="Python logo" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/html.png" alt="HTML logo" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/css.jpg" alt="CSS logo" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="JS logo" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+        <div id="skill-bars-container">
+          <h2 class="experience-sub-title">Skill Progress</h2>
+          <svg id="skills-chart" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg"></svg>
+          <div id="skills-chart"></div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Discover what I've been</p>
+      <h1 class="title">working on </h1> <br>
+      <div class="projects-details-container">
+        <div class="project-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/figma1.png"
+                alt="Figma Projects"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fidit+</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://www.figma.com/proto/uIbCDndXgU7g7E0HH1rxJu/FIDIT%2B?page-id=0%3A1&node-id=2-41&p=f&viewport=-103%2C1083%2C0.18&t=drae0FT65ZCFb1Oi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A41&show-proto-sidebar=1')"
+              >
+                View prototype
+              </button>
+            </div>
+            <h2 class="experience-sub-title project-title">Astrum app</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://www.figma.com/proto/5mTVV5b5lFg3aLimRCoEDI/astrum?page-id=29%3A1272&node-id=42-2&p=f&viewport=949%2C537%2C0.02&t=JOMbE8c8CK5js7CL-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=471%3A3291&show-proto-sidebar=1')"
+              >
+                View prototype
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/blender1.png"
+                alt="Blender Projects"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blender projects</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://drive.google.com/drive/folders/1LD5YBQ-rZVlAAftYdnF4LSO4ve0ITkVE?usp=drive_link')"
+              >
+                View projects
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/slika2_.png"
+                alt="Photography"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">My photos</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://drive.google.com/drive/folders/1nTbmaleOs2IEyoHXXeCs0u4vgonIanLA?usp=drive_link')"
+              >
+                View some of the photos
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/dizajn.png" alt="Design" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">My designs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://drive.google.com/drive/folders/1q1KfjOYUOcNsZFuG64Blgv0p0SYwpoWS?usp=drive_link')"
+              >
+                View designs
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/visio_oracle.png"
+                alt=" Visio and Oracle APEX "
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Visio & Oracle APEX
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://drive.google.com/drive/folders/1n7Y5Aax-HIZFhb1HlqG-Db9I8Aaoj72k?usp=drive_link')"
+              >
+                View details
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/html_restoran.png"
+                alt="HTML, CSS, JS"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">My websites</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="window.open('https://drive.google.com/drive/folders/1KS2KeuhI15AV3Jmv3PjSwVfguZyXNBLz?usp=drive_link')"
+              >
+                View my websites
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title"> Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.jpg" alt="Email logo" class="icon contact-icon">
+                <p><a href="mailto:matea.persic01@gmail.com">matea.persic01@gmail.com</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/logo_linkedin.png" alt="LinkedIn logo" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/matea-per%C5%A1i%C4%87-b177a8341/">LinkedIn</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/instagram.png" alt="Instagram logo" class="icon contact-icon">
+                <p><a href="https://www.instagram.com/matea38/">Instagram</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/facebook.png" alt="Facebook logo" class="icon contact-icon">
+                <p><a href="https://www.facebook.com/matea.persic.3/">Facebook</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/whatsapp.png" alt="WhatsApp icon" class="icon contact-icon">
+                <p><a href="https://wa.me/00385917829611">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-linkovi-container">
+            <ul class="nav-linkovi">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+  </body>
+</html>

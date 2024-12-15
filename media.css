@@ -1,0 +1,161 @@
+ @media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+  .project-details-container{max-width: fit-content;
+    height: auto;}
+    .project-containers{display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+  }
+  .section-container{display: flex;}
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .skill-bars-container {
+    padding: 0.5rem; 
+  }
+
+  #skills-chart {
+    width: 90%; 
+    max-width: 700px; 
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .project-details-container{max-width: fit-content;
+    height: auto;}
+    .project-containers{display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+  }
+  .skill-bars-container {
+    max-width: 90%; 
+  }
+
+  #skills-chart {
+    width: 100%; 
+    max-width: 650px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-linkovi li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .project-details-container{
+    max-width: fit-content;
+    height: auto;}
+    .project-containers
+    {display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-linkovi {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  .skill-bars-container {
+    padding: 0.5rem; 
+    max-width: 100%; 
+  }
+
+  #skills-chart {
+    width: 100%; 
+    max-width: none; 
+    margin: 0 auto; 
+  }
+}
